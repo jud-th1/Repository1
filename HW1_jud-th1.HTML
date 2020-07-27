@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Internal CSS styling begins here-->
+        <style>
+            /*Body styling*/
+            body{
+                background-color: white;
+            }
+
+            /*Styling for class "name"*/
+            .code {
+                border-radius: 6px;
+                background-color:gainsboro;
+                padding: 22px;
+            }
+
+            /*This styles the tags with ids "country", "fname" and "lname"*/
+            #fname, #lname, #country{
+                margin: 9px 0;
+                padding: 10px 22px;
+                display: inline-block;
+                width: 100%;
+                box-sizing: border-box;
+                border: 1.0px solid rgb(235, 235, 235);
+                border-radius: 5px;
+            }
+
+            /*Styles the input tag of type "submit"*/
+            input[type=submit]{
+                margin: 5px 0;
+                padding: 11px 22px;
+                cursor: pointer;
+                width: 12%;
+                border: none;
+                border-radius: 6px;
+                background-color:green;
+                color: white;
+            }
+
+            /*This styles the submit button*/
+            input[type=submit]:hover{
+                background-color: rgb(14, 212, 120);
+            }
+
+            /**/
+            textarea {
+                padding: 15px 18px;
+                box-sizing: border-box;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border: 3px solid rgb(210, 210, 211);
+                border-radius: 7px;
+                background-color: white;
+                font-size: 18px;
+                width: 100%;
+                height: 200px;
+            }
+
+        </style> <!--End of CSS styling-->
+    </head>
+    <!--End of body code-->
+    <body>
+
+    
+    <form>
+    <div class="code">
+        <!--Block of code for first and last name-->
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+        <lable for="lname">Last name</lable><br>
+        <input type="text" id="lname" name="lname" placeholder="Your last name.."><br>
+        
+        <!--Block of code for country-->
+        <label for="country">Country</label><br>
+        <select type="text" id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="kenya">kenya</option>
+            <option value="UK">UK</option>
+            <option value="togo">togo</option>
+            <option value="dubai">dubai</option>
+            <option value="jamaica">jamaica</option>
+        </select>
+        
+        <!-- Block of code for Subject and Textarea-->
+        <label for="subject">Subject</label><br>
+        <textarea type="text" id="subject" name="subject" placeholder="Write something.."></textarea><br>
+        
+        <input type="submit" id="subm" value="submit"><br>
+    </div>
+    </form>
+    </body>
+</html>
